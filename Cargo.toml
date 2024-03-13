@@ -1,7 +1,7 @@
 [package]
 name = "femto"
 version = "0.0.1"
-authors = ["Dariusz Depta <dariusz.depta@engos.software>"]
+authors = ["Dariusz Depta <dariusz@confio.gmbh>"]
 description = "Test suites for cw-multi-test"
 repository = "https://github.com/DariuszDepta/femto"
 license = "Apache-2.0"
