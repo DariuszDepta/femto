@@ -7,10 +7,22 @@ repository = "https://github.com/DariuszDepta/femto"
 license = "Apache-2.0"
 edition = "2021"
 
+[features]
+default = []
+v1 = []
+v2 = []
+
 [dependencies]
-cosmwasm-std = "2.0.0-rc.1"
+cosmwasm-std = "2.0.0"
+cw-multi-test = "2.0.0-rc.0"
 cw-storage-plus = "2.0.0-rc.0"
-cw-multi-test = { path = "../CosmWasm/cw-multi-test-2" }
 cw-utils = "2.0.0-rc.0"
-schemars = "0.8.16"
-serde = "1.0.197"
+schemars = "0.8"
+serde = "1.0"
+
+
+
+
+
+
+
