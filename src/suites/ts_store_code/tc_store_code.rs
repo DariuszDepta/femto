@@ -1,4 +1,8 @@
-//! # Test cases for `App::store_code`
+//! # Test cases for `App::store_code` function
+//!
+//! ```text
+//!  (tbd)
+//! ```
 
 use crate::contracts::counter;
 use cw_multi_test::App;

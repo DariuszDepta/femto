@@ -24,6 +24,16 @@ tasks:
     cmds:
       - cmd: cp Cargo-v-2.toml Cargo.toml && ./cov.sh "v-2"
 
+  doc:
+    desc: Generates documentation
+    cmds:
+      - cmd: cargo +stable doc --no-deps
+
+  doc-open:
+    desc: Generates documentation and opens it in a browser
+    cmds:
+      - cmd: cargo +stable doc --no-deps --open
+
   v-0-1-1:
     desc: Runs all test suites in v-0-1-1
     cmds:
