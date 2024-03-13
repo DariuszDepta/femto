@@ -1,0 +1,83 @@
+version: '3'
+
+silent: true
+
+tasks:
+
+  build:
+    desc: Builds in debug mode
+    cmds:
+      - cmd: cargo +stable build --all-features
+
+  clean:
+    desc: Removes all generated artifacts
+    cmds:
+      - cmd: cargo clean
+
+  cov-v-0-1-1:
+    desc: Runs code coverage using grcov
+    cmds:
+      - cmd: cp Cargo-v-0-1-1.toml Cargo.toml && ./cov.sh "v-0-1-1"
+
+  cov-v-2:
+    desc: Runs code coverage using grcov
+    cmds:
+      - cmd: cp Cargo-v-2.toml Cargo.toml && ./cov.sh "v-2"
+
+  v-0-1-1:
+    desc: Runs all test suites in v-0-1-1
+    cmds:
+      - cmd: cp Cargo-v-0-1-1.toml Cargo.toml && cargo +stable run
+
+  v-0-1-2:
+    desc: Runs all test suites in v-0-1-2
+    cmds:
+      - cmd: cp Cargo-v-0-1-2.toml Cargo.toml && cargo +stable run
+
+  v-0-1-3:
+    desc: Runs all test suites in v-0-1-3
+    cmds:
+      - cmd: cp Cargo-v-0-1-3.toml Cargo.toml && cargo +stable run
+
+  v-0-1-4:
+    desc: Runs all test suites in v-0-1-4
+    cmds:
+      - cmd: cp Cargo-v-0-1-4.toml Cargo.toml && cargo +stable run
+
+  v-1-1-1:
+    desc: Runs all test suites in v-1-1-1
+    cmds:
+      - cmd: cp Cargo-v-1-1-1.toml Cargo.toml && cargo +stable run
+
+  v-1-1-2:
+    desc: Runs all test suites in v-1-1-2
+    cmds:
+      - cmd: cp Cargo-v-1-1-2.toml Cargo.toml && cargo +stable run
+
+  v-1-1-3:
+    desc: Runs all test suites in v-1-1-3
+    cmds:
+      - cmd: cp Cargo-v-1-1-3.toml Cargo.toml && cargo +stable run
+
+  v-1-1-4:
+    desc: Runs all test suites in v-1-1-4
+    cmds:
+      - cmd: cp Cargo-v-1-1-4.toml Cargo.toml && cargo +stable run
+
+  v-2:
+    desc: Runs all test suites in v2
+    cmds:
+      - cmd: cp Cargo-v-2.toml Cargo.toml && cargo +stable run
+
+  run:
+    desc: Runs all test suites
+    cmds:
+      - task: v-0-1-1
+      - task: v-0-1-2
+      - task: v-0-1-3
+      - task: v-0-1-4
+      - task: v-1-1-1
+      - task: v-1-1-2
+      - task: v-1-1-3
+      - task: v-1-1-4
+      - task: v-2
