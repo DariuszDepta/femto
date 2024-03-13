@@ -37,47 +37,47 @@ tasks:
   v-0-1-1:
     desc: Runs all test suites in v-0-1-1
     cmds:
-      - cmd: cp Cargo-v-0-1-1.toml Cargo.toml && cargo +stable run
+      - cmd: cp Cargo-v-0-1-1.toml Cargo.toml && cargo +stable test -- --nocapture --quiet
 
   v-0-1-2:
     desc: Runs all test suites in v-0-1-2
     cmds:
-      - cmd: cp Cargo-v-0-1-2.toml Cargo.toml && cargo +stable run
+      - cmd: cp Cargo-v-0-1-2.toml Cargo.toml && cargo +stable test -- --nocapture --quiet
 
   v-0-1-3:
     desc: Runs all test suites in v-0-1-3
     cmds:
-      - cmd: cp Cargo-v-0-1-3.toml Cargo.toml && cargo +stable run
+      - cmd: cp Cargo-v-0-1-3.toml Cargo.toml && cargo +stable test -- --nocapture --quiet
 
   v-0-1-4:
     desc: Runs all test suites in v-0-1-4
     cmds:
-      - cmd: cp Cargo-v-0-1-4.toml Cargo.toml && cargo +stable run
+      - cmd: cp Cargo-v-0-1-4.toml Cargo.toml && cargo +stable test -- --nocapture --quiet
 
   v-1-1-1:
     desc: Runs all test suites in v-1-1-1
     cmds:
-      - cmd: cp Cargo-v-1-1-1.toml Cargo.toml && cargo +stable run
+      - cmd: cp Cargo-v-1-1-1.toml Cargo.toml && cargo +stable test -- --nocapture --quiet
 
   v-1-1-2:
     desc: Runs all test suites in v-1-1-2
     cmds:
-      - cmd: cp Cargo-v-1-1-2.toml Cargo.toml && cargo +stable run
+      - cmd: cp Cargo-v-1-1-2.toml Cargo.toml && cargo +stable test -- --nocapture --quiet
 
   v-1-1-3:
     desc: Runs all test suites in v-1-1-3
     cmds:
-      - cmd: cp Cargo-v-1-1-3.toml Cargo.toml && cargo +stable run
+      - cmd: cp Cargo-v-1-1-3.toml Cargo.toml && cargo +stable test -- --nocapture --quiet
 
   v-1-1-4:
     desc: Runs all test suites in v-1-1-4
     cmds:
-      - cmd: cp Cargo-v-1-1-4.toml Cargo.toml && cargo +stable run
+      - cmd: cp Cargo-v-1-1-4.toml Cargo.toml && cargo +stable test -- --nocapture --quiet
 
   v-2:
     desc: Runs all test suites in v2
     cmds:
-      - cmd: cp Cargo-v-2.toml Cargo.toml && cargo +stable run
+      - cmd: cp Cargo-v-2.toml Cargo.toml && cargo +stable test -- --nocapture --quiet
 
   run:
     desc: Runs all test suites

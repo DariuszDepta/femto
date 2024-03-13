@@ -30,12 +30,12 @@ const VERSION: &str = "v-2";
 
 fn run() {
     suites::run();
-    println!("All test suites completed successfully for version: {}", VERSION);
+    println!("\n\n┌───────────────────────────────────────────────────────────────┐");
+    println!("│ All tests completed successfully for version: {VERSION:15} │",);
+    println!("└───────────────────────────────────────────────────────────────┘\n\n");
 }
 
-fn main() {
-    run();
-}
+fn main() {}
 
 #[test]
 fn test_main() {
