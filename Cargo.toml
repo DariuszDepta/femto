@@ -8,7 +8,7 @@ license = "Apache-2.0"
 edition = "2021"
 
 [features]
-default = []
+default = ["v2"]
 v1 = []
 v2 = []
 
@@ -17,12 +17,5 @@ cosmwasm-std = "2.0.0"
 cw-multi-test = "2.0.0-rc.0"
 cw-storage-plus = "2.0.0-rc.0"
 cw-utils = "2.0.0-rc.0"
-schemars = "0.8"
-serde = "1.0"
-
-
-
-
-
-
-
+schemars = "0.8.16"
+serde = "1.0.197"
